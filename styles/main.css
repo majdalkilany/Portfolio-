@@ -51,7 +51,7 @@ main {
   background-image: url('../assets/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 1000px;
+  height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -69,7 +69,7 @@ main .container {
   font-family: Inter, sans-serif;
 }
 
-main .container h2 {
+main .container .commonheading {
   margin-top: 4.163rem;
   display: flex;
   flex-direction: column;
@@ -78,11 +78,13 @@ main .container h2 {
   margin-bottom: 0.938rem;
 }
 
-main .container h2 span:nth-child(1) {
+main .container h1 :nth-child(1) {
   color: #172b4d;
+  margin-bottom: 0;
 }
 
-main .container h2 span:nth-child(2) {
+main .container h2:nth-child(2) {
+  margin-top: 0;
   color: #36b37e;
 }
 
@@ -99,11 +101,14 @@ main .container .icons {
   align-items: center;
   width: 60%;
   margin: 0 auto;
+  list-style: none;
+  margin-bottom: 3rem;
 }
 
-main .container .icons div {
+main .container .icons li {
   width: 1.25rem;
   height: 1.25rem;
   gap: 0.313rem;
   margin-bottom: 1.25rem;
+  text-decoration: none;
 }
