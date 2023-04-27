@@ -21,31 +21,25 @@
 
 ## 🛠 Built With <a name="Majd Alkilany"></a>
 
-### Tech Stack <a name="HTML&CSS"></a>
+### Tech Stack <a name="HTML andCSS"></a>
+
+HTML and CSS
 
 ### Key Features <a name="create nice and will disign portfolio "></a>
 
 - **[Portfolio ]**
 
-## 🚀 Live Demo <a name="Portfolio"></a>
-
-- [Live Demo Link](https://majdalkilany.github.io/portfolio-/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-**To work on thois project you will have to first clone it into your local machine and start working on it**
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
+
+Code Editor
 
 ### Setup
 
@@ -55,11 +49,11 @@ Clone this repository to your desired folder:
 
 ### Install
 
+No need To install any dependency
+
 ### Usage
 
-### Run tests
-
-### Deployment
+run the server from the live-server extinction
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,5 +95,13 @@ If you like this project please support me in this
 I would like to thank every one how incurge me to start this journey
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
