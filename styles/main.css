@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -66,7 +67,6 @@ main .container {
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-  font-family: Inter, sans-serif;
 }
 
 main .container .commonheading {
@@ -111,4 +111,145 @@ main .container .icons li {
   gap: 0.313rem;
   margin-bottom: 1.25rem;
   text-decoration: none;
+}
+
+main .cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 62px;
+}
+
+/* @media   {
+
+} */
+
+main .cards .work-title {
+  justify-self: center;
+  align-self: center;
+  gap: 24px;
+  width: 300px;
+  height: 125px;
+}
+
+main .section-title {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #172b4d;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+main .cards .work-title hr {
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  border-radius: 24px;
+}
+
+main .cards .card {
+  width: 327px;
+  height: 474px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+main .cards .card img {
+  height: 265px;
+  width: 327px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #d0d9d4;
+  background: #ebf0ee;
+}
+
+main .cards .card h3 {
+  width: 295px;
+  height: 57px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+  align-content: center;
+  text-align: center;
+}
+
+main .cards .card ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  gap: 10px;
+}
+
+main .cards .card ul li {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 12px;
+  gap: 10px;
+  width: 122px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  justify-self: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .cards .card button:active {
+  background-color: #008552;
+}
+
+main .about p {
+  width: 351px;
+  height: 194px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+main .about {
+  background-image: url(../assets/illustration\ 1-\ about\ me-mobile.png);
+
+  /* background-image: url(../assets/illustration-\ about\ me-\ mobile\ 2.png); */
+  background-repeat: no-repeat;
+  background-position: top right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-div {
+  padding: 0;
+  margin: 0%;
+  width: 375px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/illustration-\ about\ me-\ mobile\ 2.png);
+  background-position: bottom left;
 }
