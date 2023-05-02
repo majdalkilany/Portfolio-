@@ -227,12 +227,45 @@
       >
         <fieldset id="fs-frm-inputs">
           <input
+            type="text"
+            name="name"
+            class="data-input"
+            placeholder="First and Last"
+            required=""
+            maxlength="30"
+            minlength="5"
+          />
+          <input
+            type="email"
+            name="email"
+            class="data-input"
+            placeholder="email@domain.tld"
+            required=""
+            maxlength="30"
+            minlength="5"
+          />
+          <textarea
+            class="text-area"
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Hey I'd like to connect to..."
+            required=""
+            maxlength="500"
+            minlength="5"
+          ></textarea>
+          
+        
+          
+          
+          <input
             type="hidden"
             name="_subject"
             id="email-subject"
             value="Contact Form Submission"
           />
         </fieldset>
+        
         <input type="submit" value="Get in touch" class="button" />
       </form>
     </main>

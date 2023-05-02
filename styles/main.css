@@ -293,7 +293,7 @@ main .about {
 }
 
 .middle-text {
-  margin-left: 10px;
+  margin-left: 3em;
   width: 381px;
   height: 38px;
   font-style: normal;
@@ -322,6 +322,23 @@ main .about {
   display: flex;
   align-items: center;
   color: #6b778c;
+  padding: 10px;
+  margin: 10px;
+}
+
+.text-area {
+  height: 114px;
+  width: 305px;
+  border-radius: 4px;
+  border-radius: 4px;
+  top: calc(50% - 18px / 2);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6B778C;
   padding: 10px;
   margin: 10px;
 }
