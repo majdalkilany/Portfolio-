@@ -52,7 +52,6 @@ main {
   background-image: url('../assets/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -78,23 +77,23 @@ main .container .commonheading {
   margin-bottom: 0.938rem;
 }
 
-main .container h1 :nth-child(1) {
+.container h1 :nth-child(1) {
   color: #172b4d;
   margin-bottom: 0;
 }
 
-main .container h2:nth-child(2) {
+.container h2:nth-child(2) {
   margin-top: 0;
   color: #36b37e;
 }
 
-main .container p {
+.container p {
   font-size: 1.25rem;
   font-weight: 400;
   margin-top: 0.469rem;
 }
 
-main .container .icons {
+.container .icons {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -105,7 +104,7 @@ main .container .icons {
   margin-bottom: 3rem;
 }
 
-main .container .icons li {
+.container .icons li {
   width: 1.25rem;
   height: 1.25rem;
   gap: 0.313rem;
@@ -200,7 +199,7 @@ main .cards .card ul li {
 }
 
 .button {
-  padding: 12px;
+  padding: 3px;
   gap: 10px;
   width: 122px;
   height: 48px;
@@ -209,7 +208,7 @@ main .cards .card ul li {
   justify-self: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
@@ -252,4 +251,77 @@ main .about {
   background-repeat: no-repeat;
   background-image: url(../assets/illustration-\ about\ me-\ mobile\ 2.png);
   background-position: bottom left;
+}
+
+#fs-frm-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+  width: 327px;
+  height: 330px;
+  border: none;
+}
+
+#fs-frm {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 327px;
+  height: 330px;
+}
+
+.data-input {
+  box-sizing: border-box;
+  border: 1px solid #d0d9d4;
+  height: 48px;
+  width: 327px;
+  border-radius: 4px;
+  top: calc(50% - 18px / 2);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6b778c;
+  padding: 10px;
+  margin: 10px;
+}
+
+.middle-text {
+  margin-left: 10px;
+  width: 381px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+
+  text-align: center;
+
+  /* Neutrals/N500 */
+
+  color: #42526e;
+}
+
+.text-area {
+  height: 114px;
+  width: 305px;
+  border-radius: 4px;
+  border-radius: 4px;
+  top: calc(50% - 18px / 2);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6b778c;
+  padding: 10px;
+  margin: 10px;
 }
