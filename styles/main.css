@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
+  height: auto;
 }
 
 .container {
@@ -52,6 +53,7 @@ main {
   background-image: url('../assets/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -59,6 +61,7 @@ main {
     background-image: url('../assets/header-illsutration-mobile@2x.png');
     background-repeat: no-repeat;
     background-size: 100%;
+    height: auto;
   }
 }
 
@@ -213,8 +216,8 @@ main .cards .card ul li {
   letter-spacing: 0.03em;
   color: #fff;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  border: none;
 }
 
 main .cards .card button:active {
@@ -299,7 +302,6 @@ main .about {
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 2rem;
   text-align: center;
   color: #42526e;
 }
@@ -318,4 +320,36 @@ main .about {
   color: #6b778c;
   padding: 0.652rem;
   margin: 0.652rem;
+}
+
+#contact-frm-header {
+  width: 327px;
+  height: 363px;
+  margin-top: 27rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  display: block;
+}
+footer {
+  display: block;
+  /* margin-top: 30rem; */
+}
+
+.meow {
+  width: 100%;
+  height: 30rem;
+}
+
+body {
+  background-image: url('../assets/Frame\ \(1\).png');
+  background-repeat: no-repeat;
+  background-position: 312px 4570px;
+}
+
+#form-btn {
+  padding: 1rem;
 }
