@@ -223,7 +223,11 @@ main .cards .card ul li {
   border: none;
 }
 
-main .cards .card button:active {
+button:active {
+  background-color: #008552;
+}
+
+.button:active {
   background-color: #008552;
 }
 
