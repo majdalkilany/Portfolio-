@@ -3,6 +3,9 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   height: auto;
+  background-image: url('../assets/Frame\ \(1\).png');
+  background-repeat: no-repeat;
+  background-position: 312px 4570px;
 }
 
 .container {
@@ -334,20 +337,16 @@ main .about {
   color: #172b4d;
   display: block;
 }
+
 footer {
   display: block;
+
   /* margin-top: 30rem; */
 }
 
 .meow {
   width: 100%;
   height: 30rem;
-}
-
-body {
-  background-image: url('../assets/Frame\ \(1\).png');
-  background-repeat: no-repeat;
-  background-position: 312px 4570px;
 }
 
 #form-btn {
