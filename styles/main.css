@@ -403,8 +403,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    margin: 3rem;
+    width: 75%;
+    margin: auto;
+    margin-top: -5rem;
+    text-align: -webkit-center;
   }
 
   main .cards .card {
@@ -450,6 +452,8 @@ footer {
 
   main .cards-work {
     grid-template-rows: repeat(1, 1fr);
+    width: 80%;
+    margin: auto !important;
   }
 
   main .cards .work-card {
@@ -481,6 +485,8 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     width: 100vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   #contact-frm-header {
