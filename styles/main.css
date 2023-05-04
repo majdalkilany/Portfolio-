@@ -226,7 +226,6 @@ main .about p {
 
 main .about {
   background-image: url(../assets/illustration\ 1-\ about\ me-mobile.png);
-
   background-repeat: no-repeat;
   background-position: top right;
   display: flex;
