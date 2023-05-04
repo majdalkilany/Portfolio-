@@ -10,15 +10,15 @@
 
   <body>
     <header>
-      <nav class="container">
-        <div class="icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
-    <main>
+      <div id="disktop-nav">
+        <nav>
+          <ul>
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
       <section class="container">
         <h1 class="commonheading">Hey there. I’m Majd.</h1>
         <h2 class="commonheading">I’m a software developer</h2>
@@ -29,7 +29,7 @@
           you need coded, don’t hesitate to contact me.
         </p>
         <ul class="icons">
-          <li>
+          <li class="nav-icons">
             <a
               href="https://www.linkedin.com/in/majdalkilany/"
               target="”_blank”"
@@ -56,7 +56,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav-icons">
             <a href="https://twitter.com/majdkilany92">
               <svg
                 width="20"
@@ -72,7 +72,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav-icons">
             <a href="https://github.com/majdalkilany"
               ><svg
                 width="18"
@@ -88,7 +88,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav-icons">
             <svg
               width="20"
               height="17"
@@ -102,7 +102,7 @@
               />
             </svg>
           </li>
-          <li>
+          <li class="nav-icons">
             <svg
               width="15"
               height="21"
@@ -144,14 +144,23 @@
           </svg>
         </div>
       </section>
+      <nav class="container" id="mobile-nav">
+        <div class="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <main>
       <section class="cards">
         <div class="work-title">
           <h2 class="section-title">My Recent Works</h2>
-          <hr />
+          <hr id="hr-card" />
         </div>
 
         <article class="card">
-          <img src="" alt="project-image" />
+          <img src="./assets/Img Plaholder.png" alt="project-image" />
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul>
             <li>Ruby on Rails</li>
@@ -162,7 +171,7 @@
           <button class="button">See project</button>
         </article>
         <article class="card">
-          <img src="" alt="project-image" />
+          <img src="./assets/Img Plaholder.png" alt="project-image" />
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul>
             <li>Ruby on Rails</li>
@@ -173,7 +182,7 @@
           <button class="button">See project</button>
         </article>
         <article class="card">
-          <img src="" alt="project-image" />
+          <img src="./assets/Img Plaholder.png" alt="project-image" />
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul>
             <li>Ruby on Rails</li>
@@ -184,7 +193,7 @@
           <button class="button">See project</button>
         </article>
         <article class="card">
-          <img src="" alt="project-image" />
+          <img src="./assets/Img Plaholder.png" alt="project-image" />
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul>
             <li>Ruby on Rails</li>
@@ -195,7 +204,18 @@
           <button class="button">See project</button>
         </article>
         <article class="card">
-          <img src="" alt="project-image" />
+          <img src="./assets/Img Plaholder.png" alt="project-image" />
+          <h3>Multi-Post Stories Gain+Glory</h3>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="button">See project</button>
+        </article>
+        <article class="card">
+          <img src="./assets/Img Plaholder.png" alt="project-image" />
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul>
             <li>Ruby on Rails</li>
@@ -218,6 +238,57 @@
           <button class="button">Get my resume</button>
         </div>
       </section>
+
+      <section class="cards cards-work">
+        <article class="card work-card">
+          <img
+            src="./assets/Icons.png"
+            class="work-card__img"
+            alt="project-image"
+          />
+          <h3>Languages</h3>
+          <ul class="work-card-li">
+            <li>Ruby on Rails</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+          </ul>
+        </article>
+        <article class="card work-card">
+          <img
+            src="./assets/Icons2.png"
+            class="work-card__img"
+            alt="project-image"
+          />
+          <h3>Frameworks</h3>
+          <ul class="work-card-li">
+            <li>Ruby on Rails</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+          </ul>
+        </article>
+        <article class="card work-card">
+          <img
+            src="./assets/Icons.png"
+            class="work-card__img"
+            alt="project-image"
+          />
+          <h3>Skills</h3>
+          <ul class="work-card-li">
+            <li>Ruby on Rails</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+            <li>Javascript</li>
+            <li>Javascript</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- <div class="meow"></div> -->
+    </main>
+    <footer>
       <form
         action="https://formspree.io/f/xjvdlrgz"
         method="POST"
@@ -256,18 +327,15 @@
             required
             maxlength="500"
           ></textarea>
-        </fieldset>
 
-        <input
-          type="submit"
-          value="Get in touch"
-          class="button"
-          id="form-btn"
-        />
+          <input
+            type="submit"
+            value="Get in touch"
+            class="button"
+            id="form-btn"
+          />
+        </fieldset>
       </form>
-      <div class="meow"></div>
-    </main>
-    <footer>
       <div class="imgbk">
         <section class="container" id="centered">
           <h4 class="middle-text">majdalkilany92@gmail.com</h4>
