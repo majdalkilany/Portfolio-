@@ -1,3 +1,6 @@
+html {
+  margin: 0%;
+}
 body {
   padding: 0;
   margin: 0;
@@ -6,6 +9,11 @@ body {
   background-image: url('../assets/Frame\ \(1\).png');
   background-repeat: no-repeat;
   background-position: 312px 4570px;
+  width: 100%;
+  overflow-x: hidden;
+}
+#disktop-nav {
+  display: none;
 }
 
 .container {
@@ -20,18 +28,6 @@ body {
     width: 750px;
   }
 }
-
-/* @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-} */
 
 header .container {
   display: flex;
@@ -338,6 +334,10 @@ main .about {
   display: block;
 }
 
+main .cards-work {
+  display: none;
+}
+
 footer {
   display: block;
 
@@ -475,5 +475,55 @@ footer {
     flex-wrap: wrap;
     background: none;
     justify-content: center;
+  }
+  .meow {
+    display: none;
+  }
+
+  #fs-frm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  #contact-frm-header {
+    width: 40%;
+    height: 50%;
+    margin: 0;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  #fs-frm-inputs {
+    margin: 0;
+    width: 60%;
+    align-items: baseline;
+  }
+  .middle-text {
+    display: none;
+  }
+  main #cards-sec {
+    margin-top: -10rem;
+  }
+  #disktop-nav {
+    display: block;
+  }
+  .data-input {
+    width: 50rem;
+  }
+  .text-area {
+    width: 50rem;
+    padding: 0;
+  }
+  #form-btn {
+    margin: 0;
   }
 }
