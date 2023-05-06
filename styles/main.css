@@ -32,13 +32,16 @@ body {
   from {
     transform: rotateZ(0);
   }
+
   to {
     transform: rotateZ(10deg);
   }
 }
+
 .card {
   animation: wiggle 200ms 3s 8 alternate;
 }
+
 #wiggle {
   animation: wiggle 200ms 3s 8 alternate;
 }
