@@ -28,6 +28,21 @@ body {
   text-align: center;
 }
 
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
+}
+.card {
+  animation: wiggle 200ms 3s 8 alternate;
+}
+#wiggle {
+  animation: wiggle 200ms 3s 8 alternate;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
