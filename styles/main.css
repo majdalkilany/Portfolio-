@@ -551,3 +551,19 @@ footer {
     margin: 0;
   }
 }
+
+.nav-item {
+  list-style: none;
+  margin: 3rem;
+  text-align: center;
+}
+.nav-item a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  position: relative;
+}
