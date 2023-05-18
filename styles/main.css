@@ -798,7 +798,7 @@ body header #desktop-nav nav {
     order: -1;
     width: 40%;
     margin: auto;
-    margin-right: 0px !important;
+    margin-right: 0 !important;
   }
 
   .buttons button {
