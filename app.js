@@ -16,15 +16,13 @@ document.querySelectorAll('.nav-links').forEach((i) => {
 });
 
 const form = document.getElementById('fs-frm');
-form.addEventListener('submit', validateForm);
 function validateForm(event) {
   const emailInput = document.querySelector('input[name="email"]');
   const email = emailInput.value.toLowerCase(); // Convert email to lower case
   if (emailInput.value !== email) {
     event.preventDefault();
     const errorElement = document.createElement('p');
-    errorElement.textContent =
-      'Please enter the email in lower case.';
+    errorElement.textContent = 'Please enter the email in lower case.';
     errorElement.style.color = 'red';
     const existingError = document.getElementById('email-error');
     if (existingError) {
@@ -35,3 +33,5 @@ function validateForm(event) {
     errorElement.id = 'email-error';
   }
 }
+
+form.addEventListener('submit', validateForm);
