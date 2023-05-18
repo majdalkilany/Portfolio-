@@ -89,7 +89,6 @@ document.querySelectorAll('.nav-links').forEach((i) => {
   });
 });
 
-
 const form = document.getElementById('fs-frm');
 function validateForm(event) {
   const emailInput = document.querySelector('input[name="email"]');
@@ -199,4 +198,3 @@ console.log(closeBtn);
 
 popupRender();
 closeBtn.addEventListener('click', closePopup);
-
