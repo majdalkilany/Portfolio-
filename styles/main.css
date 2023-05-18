@@ -712,7 +712,7 @@ body header #desktop-nav nav {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .popup-content {
@@ -770,7 +770,7 @@ body header #desktop-nav nav {
   }
 
   .popup-img {
-    width: 100%;
+    width: 99%;
     height: 50%;
     background-image: url('../assets/descktop-popup.png');
     background-size: cover;
@@ -790,11 +790,15 @@ body header #desktop-nav nav {
     width: 45%;
     order: -2;
     align-self: center;
+    margin: 0;
+    margin-left: 5px;
   }
 
   .buttons {
     order: -1;
     width: 40%;
+    margin: auto;
+    margin-right: 0px !important;
   }
 
   .buttons button {
