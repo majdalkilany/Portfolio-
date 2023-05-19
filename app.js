@@ -195,3 +195,14 @@ closeBtn = document.getElementById('closeBtn');
 
 popupRender();
 closeBtn.addEventListener('click', closePopup);
+
+function saveFormData() {
+  const formData = {};
+  const inputs = form.querySelectorAll('input, textarea');
+  inputs.forEach((input) => {
+    formData[input.name] = input.value;
+  });
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+window.addEventListener('load', loadFormData);
+form.addEventListener('change', saveFormData);
