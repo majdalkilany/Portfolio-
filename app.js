@@ -125,7 +125,7 @@ function popupRender() {
   cards.forEach((card) => {
     card.children[3].addEventListener('click', function () {
       const foundElement = projects.find(
-        (project) => project.id === Number(this.id),
+        (project) => project.id === Number(this.id)
       );
       console.log(foundElement);
       // eslint-disable-next-line no-use-before-define
@@ -135,9 +135,7 @@ function popupRender() {
   });
 }
 
-function render({
-  technologies, name, description, liveVersion, sourceCode,
-}) {
+function render({ technologies, name, description, liveVersion, sourceCode }) {
   popupContent.innerHTML = '';
   const backgroundDiv = document.createElement('div');
   backgroundDiv.classList.add('popup-img');
@@ -216,18 +214,3 @@ function loadFormData() {
     }
   }
 }
-
-function saveFormData() {
-  const formData = {};
-
-  const inputs = form.querySelectorAll('input, textarea');
-  inputs.forEach((input) => {
-    formData[input.name] = input.value;
-  });
-
-  localStorage.setItem('formData', JSON.stringify(formData));
-}
-
-window.addEventListener('load', loadFormData);
-
-form.addEventListener('change', saveFormData);
