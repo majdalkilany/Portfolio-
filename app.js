@@ -96,7 +96,8 @@ function validateForm(event) {
   if (emailInput.value !== email) {
     event.preventDefault();
     const errorElement = document.createElement('p');
-    errorElement.textContent = 'Please enter the email in lower case.';
+    errorElement.textContent =
+      'Please enter the email in lower case.';
     errorElement.style.color = 'red';
     const existingError = document.getElementById('email-error');
     if (existingError) {
@@ -125,7 +126,7 @@ function popupRender() {
   cards.forEach((card) => {
     card.children[3].addEventListener('click', function () {
       const foundElement = projects.find(
-        (project) => project.id === Number(this.id),
+        (project) => project.id === Number(this.id)
       );
       console.log(foundElement);
       // eslint-disable-next-line no-use-before-define
@@ -136,7 +137,11 @@ function popupRender() {
 }
 
 function render({
-  technologies, name, description, liveVersion, sourceCode,
+  technologies,
+  name,
+  description,
+  liveVersion,
+  sourceCode,
 }) {
   popupContent.innerHTML = '';
   const backgroundDiv = document.createElement('div');
@@ -198,3 +203,14 @@ console.log(closeBtn);
 
 popupRender();
 closeBtn.addEventListener('click', closePopup);
+
+function saveFormData() {
+  const formData = {};
+  const inputs = form.querySelectorAll('input, textarea');
+  inputs.forEach((input) => {
+    formData[input.name] = input.value;
+  });
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+window.addEventListener('load', loadFormData);
+form.addEventListener('change', saveFormData);
