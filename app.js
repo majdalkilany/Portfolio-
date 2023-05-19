@@ -191,6 +191,25 @@ function render({ technologies, name, description, liveVersion, sourceCode }) {
 </svg>
 </button></a>`;
 }
+function loadFormData() {
+  const savedData = localStorage.getItem('formData');
+
+  if (savedData) {
+    const formData = JSON.parse(savedData);
+
+    // eslint-disable-next-line no-restricted-syntax
+    for (const field in formData) {
+      // eslint-disable-next-line no-prototype-builtins
+      if (formData.hasOwnProperty(field)) {
+        const input = form.querySelector(`[name="${field}"]`);
+        if (input) {
+          input.value = formData[field];
+        }
+      }
+    }
+  }
+}
+
 closeBtn = document.getElementById('closeBtn');
 
 popupRender();
